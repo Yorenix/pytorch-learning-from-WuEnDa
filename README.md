@@ -1,105 +1,201 @@
-# Deep Learning Specialization on Coursera (offered by deeplearning.ai)
+# 吴恩达《深度学习专项课程》学习记录
 
-Programming assignments and quizzes from all courses in the Coursera [Deep Learning specialization](https://www.coursera.org/specializations/deep-learning) offered by `deeplearning.ai`.
+本项目用于记录我学习吴恩达（Andrew Ng）在 Coursera 开设的 [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) 时使用的课程资料、编程作业、测验和个人笔记。
 
-Instructor: [Andrew Ng](http://www.andrewng.org/)
+课程由 [DeepLearning.AI](https://www.deeplearning.ai/) 提供，授课教师为 [吴恩达](https://www.andrewng.org/)。项目中的大部分原始课程代码和资料来自 [amanchadha/coursera-deep-learning-specialization](https://github.com/amanchadha/coursera-deep-learning-specialization)，并在此基础上加入了个人学习笔记、运行记录和部分 PyTorch 改写内容。
 
-## Notes
+## 项目内容
 
-### For detailed interview-ready notes on all courses in the Coursera Deep Learning specialization, refer [www.aman.ai](https://aman.ai/).
+本项目包含深度学习专项课程的五门课程：
 
-## Setup
+1. 神经网络与深度学习；
+2. 改善深层神经网络：超参数调试、正则化与优化；
+3. 结构化机器学习项目；
+4. 卷积神经网络；
+5. 序列模型。
 
-Run ```setup.sh``` to (i) download a pre-trained VGG-19 dataset and (ii) extract the zip'd pre-trained models and datasets that are needed for all the assignments.
+每门课程目录中可能包含：
 
-## Credits
+- Jupyter Notebook 编程作业；
+- 作业所需的数据集、辅助代码和预训练模型；
+- 每周测验的 Markdown 或 PDF 版本；
+- 课程总结和示意图；
+- 不同年份或不同框架版本的作业。
 
-This repo contains my work for this specialization. The code base, quiz questions and diagrams are taken from the [Deep Learning Specialization on Coursera](https://www.coursera.org/specializations/deep-learning), unless specified otherwise.
+## 个人笔记
 
-## 2021 Version
+个人整理的中文笔记位于 [note.md](note.md)，目前包括：
 
-This specialization was updated in April 2021 to include developments in deep learning and programming frameworks, with the biggest change being shifting from TensorFlow 1 to TensorFlow 2. This repo has been updated accordingly as well.
+- 逻辑回归的前向传播、反向传播和向量化；
+- 多层神经网络与梯度下降公式；
+- 偏差、方差和正则化；
+- Mini-batch、Momentum、RMSprop 和 Adam；
+- Batch Normalization、Softmax 和超参数调试；
+- 机器学习策略、误差分析和数据分布不匹配；
+- 卷积、池化、参数共享和稀疏连接；
+- LeNet、AlexNet、VGG、ResNet 和 Inception；
+- 迁移学习与数据增强。
 
-## Programming Assignments
+笔记中的公式、计算示例和流程图主要用于复习课程概念。如发现错误，欢迎通过 Issue 指出。
 
-### Course 1: Neural Networks and Deep Learning
+## 课程目录
 
-  - [Week 2 - PA 1 - Python Basics with Numpy](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%202/Python%20Basics%20with%20Numpy/Python_Basics_With_Numpy_v3a.ipynb)
-  - [Week 2 - PA 2 - Logistic Regression with a Neural Network mindset](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%202/Logistic%20Regression%20as%20a%20Neural%20Network/Logistic_Regression_with_a_Neural_Network_mindset_v6a.ipynb)
-  - [Week 3 - PA 3 - Planar data classification with one hidden layer](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%203/Planar%20data%20classification%20with%20one%20hidden%20layer/Planar_data_classification_with_onehidden_layer_v6c.ipynb)
-  - [Week 4 - PA 4 - Building your Deep Neural Network: Step by Step](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%204/Building%20your%20Deep%20Neural%20Network%20-%20Step%20by%20Step/Building_your_Deep_Neural_Network_Step_by_Step_v8a.ipynb)
-  - [Week 4 - PA 5 - Deep Neural Network for Image Classification: Application](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%204/Deep%20Neural%20Network%20Application_%20Image%20Classification/Deep%20Neural%20Network%20-%20Application%20v8.ipynb)
+### 第一课：神经网络与深度学习
 
-### Course 2: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+目录：[C1 - Neural Networks and Deep Learning](<C1 - Neural Networks and Deep Learning>)
 
-  - [Week 1 - PA 1 - Initialization](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%201/Initialization/Initialization.ipynb)
-  - [Week 1 - PA 2 - Regularization](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%201/Regularization/Regularization_v2a.ipynb)
-  - [Week 1 - PA 3 - Gradient Checking](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%201/Gradient%20Checking/Gradient%20Checking%20v1.ipynb)
-  - [Week 2 - PA 4 - Optimization Methods](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%202/Optimization_methods_v1b.ipynb)
-  - [Week 3 - PA 5 - TensorFlow Tutorial](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%203/Tensorflow_introduction.ipynb)
+主要内容：
 
-### Course 3: Structuring Machine Learning Projects
+- Python 与 NumPy 基础；
+- 逻辑回归；
+- 单隐藏层神经网络；
+- 深层神经网络的前向传播和反向传播；
+- 使用深层神经网络完成图像分类。
 
-  - There are no programming assignments for this course. But this course comes with very interesting case study quizzes (below).
-  
-### Course 4: Convolutional Neural Networks
+### 第二课：改善深层神经网络
 
-  - [Week 1 - PA 1 - Convolutional Model: step by step](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%201/Convolution_model_Step_by_Step_v1.ipynb)
-  - [Week 1 - PA 2 - Convolutional Neural Networks: Application](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%201/Convolution_model_Application.ipynb)
-  - [Week 2 - PA 1 - Keras - Tutorial - Happy House](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%202/KerasTutorial/Keras%20-%20Tutorial%20-%20Happy%20House%20v2.ipynb)
-  - [Week 2 - PA 2 - Residual Networks](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%202/ResNets/Residual_Networks.ipynb)
-  - [Week 2 - PA 2 - Transfer Learning with MobileNet](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%202/Transfer%20Learning%20with%20MobileNet/Transfer_learning_with_MobileNet_v1.ipynb)
-  - [Week 3 - PA 1 - Car detection with YOLO for Autonomous Driving](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%203/Car%20detection%20for%20Autonomous%20Driving/Autonomous_driving_application_Car_detection.ipynb)
-  - [Week 3 - PA 2 - Image Segmentation Unet](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%203/Image%20Segmentation%20Unet/Image_segmentation_Unet_v2.ipynb)
-  - [Week 4 - PA 1 - Art Generation with Neural Style Transfer](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%204/Neural%20Style%20Transfer/Art_Generation_with_Neural_Style_Transfer.ipynb)    
-  - [Week 4 - PA 2 - Face Recognition](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%204/Face%20Recognition/Face_Recognition.ipynb)
-  
-### Course 5: Sequence Models
+目录：[C2 - Improving Deep Neural Networks](<C2 - Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization>)
 
-  - [Week 1 - PA 1 - Building a Recurrent Neural Network - Step by Step](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%201/Building%20a%20Recurrent%20Neural%20Network%20-%20Step%20by%20Step/Building_a_Recurrent_Neural_Network_Step_by_Step.ipynb)
-  - [Week 1 - PA 2 - Dinosaur Land -- Character-level Language Modeling](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%201/Dinosaur%20Island%20--%20Character-level%20language%20model/Dinosaurus_Island_Character_level_language_model.ipynb)
-  - [Week 1 - PA 3 - Jazz improvisation with LSTM](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%201/Jazz%20improvisation%20with%20LSTM/Improvise_a_Jazz_Solo_with_an_LSTM_Network_v4_Solution.ipynb)  
-  - [Week 2 - PA 1 - Word Vector Representation and Debiasing](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%202/Word%20Vector%20Representation/Operations_on_word_vectors_v2a.ipynb)  
-  - [Week 2 - PA 2 - Emojify!](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%202/Emojify/Emoji_v3a.ipynb)  
-  - [Week 3 - PA 1 - Neural Machine Translation with Attention](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%203/Machine%20Translation/Neural_machine_translation_with_attention_v4a.ipynb)  
-  - [Week 3 - PA 2 - Trigger Word Detection](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%203/Trigger%20word%20detection/Trigger_word_detection_v2a.ipynb)
-  - [Week 4 - PA 1 - Transformer Network](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%204/Transformer%20Subclass/C5_W4_A1_Transformer_Subclass_v1.ipynb)  
-  - [Week 3 - PA 2 - Transformer Network Application: Named-Entity Recognition](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%203/Named%20Entity%20Recognition/Transformer_application_Named_Entity_Recognition.ipynb)   
-  - [Week 3 - PA 2 - Transformer Network Application: Question Answering](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%203/Question%20Answering/QA_transformer.ipynb) 
-  
-## Quiz Solutions
+主要内容：
 
-### Course 1: Neural Networks and Deep Learning
+- 参数初始化；
+- L2 正则化和 Dropout；
+- 梯度检查；
+- Mini-batch Gradient Descent；
+- Momentum、RMSprop 和 Adam；
+- 超参数调试；
+- Batch Normalization；
+- TensorFlow 基础。
 
-  - Week 1 Quiz - Introduction to deep learning: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%201/Week%201%20Quiz%20-%20Introduction%20to%20deep%20learning.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%201/Week%201%20Quiz%20-%20Introduction%20to%20deep%20learning.pdf)
-  - Week 2 Quiz - Neural Network Basics: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%202/Week%202%20Quiz%20-%20Neural%20Network%20Basics.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%202/Week%202%20Quiz%20-%20Neural%20Network%20Basics.pdf)
-  - Week 3 Quiz - Shallow Neural Networks: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%203/Week%203%20Quiz%20-%20Shallow%20Neural%20Networks.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%203/Week%203%20Quiz%20-%20Shallow%20Neural%20Networks.pdf)
-  - Week 4 Quiz - Key concepts on Deep Neural Networks: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%204/Week%204%20Quiz%20-%20Key%20concepts%20on%20Deep%20Neural%20Networks.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C1%20-%20Neural%20Networks%20and%20Deep%20Learning/Week%204/Week%204%20Quiz%20-%20Key%20concepts%20on%20Deep%20Neural%20Networks.pdf)
+### 第三课：结构化机器学习项目
 
-### Course 2: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+目录：[C3 - Structuring Machine Learning Projects](<C3 - Structuring Machine Learning Projects>)
 
-  - Week 1 Quiz - Practical aspects of deep learning: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%201/Week%201%20Quiz%20-%20Practical%20aspects%20of%20deep%20learning.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%201/Week%201%20Quiz%20-%20Practical%20aspects%20of%20deep%20learning.pdf)
-  - Week 2 Quiz - Optimization algorithms: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%202/Week%202%20Quiz%20-%20Optimization%20algorithms.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%202/Week%202%20Quiz%20-%20Optimization%20algorithms.pdf)
-  - Week 3 Quiz - Hyperparameter tuning, Batch Normalization, Programming Frameworks: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%203/Week%203%20Quiz%20-%20Hyperparameter%20tuning%2C%20Batch%20Normalization%2C%20Programming%20Frameworks.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Week%203/Week%203%20Quiz%20-%20Hyperparameter%20tuning%2C%20Batch%20Normalization%2C%20Programming%20Frameworks.pdf)
-  
-### Course 3: Structuring Machine Learning Projects
+这门课程没有常规编程作业，重点是通过案例学习：
 
-  - Week 1 Quiz - Bird recognition in the city of Peacetopia (case study): [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C3%20-%20Structuring%20Machine%20Learning%20Projects/Week%201%20Quiz%20-%20Bird%20recognition%20in%20the%20city%20of%20Peacetopia%20(case%20study).md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C3%20-%20Structuring%20Machine%20Learning%20Projects/Week%201%20Quiz%20-%20Bird%20recognition%20in%20the%20city%20of%20Peacetopia%20(case%20study).pdf)
-  - Week 2 Quiz - Autonomous driving (case study): [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C3%20-%20Structuring%20Machine%20Learning%20Projects/Week%202%20Quiz%20-%20Autonomous%20driving%20(case%20study).md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C3%20-%20Structuring%20Machine%20Learning%20Projects/Week%202%20Quiz%20-%20Autonomous%20driving%20(case%20study).pdf)
+- 如何选择评价指标；
+- 如何划分训练集、开发集和测试集；
+- 如何判断 Bias、Variance 和 Data Mismatch；
+- 如何进行 Error Analysis；
+- 迁移学习、多任务学习和端到端学习。
 
-### Course 4: Convolutional Neural Networks
+### 第四课：卷积神经网络
 
-  - Week 1 Quiz - The basics of ConvNets: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%201/Week%201%20Quiz%20-%20The%20basics%20of%20ConvNets.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%201/Week%201%20Quiz%20-%20The%20basics%20of%20ConvNets.pdf)
-  - Week 2 Quiz - Deep convolutional models: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%202/Week%202%20Quiz%20-%20Deep%20convolutional%20models.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%202/Week%202%20Quiz%20-%20Deep%20convolutional%20models.pdf)
-  - Week 3 Quiz - Detection algorithms: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%203/Week%203%20Quiz%20-%20Detection%20algorithms.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%203/Week%203%20Quiz%20-%20Detection%20algorithms.pdf)
-  - Week 4 Quiz - Special applications: Face recognition & Neural style transfer: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%204/Week%204%20Quiz%20-%20Special%20applications%20Face%20Recognition%20and%20Neural%20Style%20Transfer.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C4%20-%20Convolutional%20Neural%20Networks/Week%204/Week%204%20Quiz%20-%20Special%20applications%20Face%20Recognition%20and%20Neural%20Style%20Transfer.pdf)
+目录：[C4 - Convolutional Neural Networks](<C4 - Convolutional Neural Networks>)
 
-### Course 5: Sequence Models
+主要内容：
 
-  - Week 1 Quiz - Recurrent Neural Networks: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%201/Week%201%20Quiz%20-%20Recurrent%20Neural%20Networks.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%201/Week%201%20Quiz%20-%20Recurrent%20Neural%20Networks.pdf)
-  - Week 2 Quiz - Natural Language Processing & Word Embeddings: [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%202/Week%202%20Quiz%20-%20Natural%20Language%20Processing%20%26%20Word%20Embeddings.pdf)
-  - Week 3 Quiz - Sequence models & Attention mechanism: [Text](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%203/Week%203%20Quiz%20-%20Sequence%20models%20%26%20Attention%20mechanisms.md) | [PDF](https://nbviewer.jupyter.org/github/amanchadha/coursera-deep-learning-specialization/blob/master/C5%20-%20Sequence%20Models/Week%203/Week%203%20Quiz%20-%20Sequence%20models%20%26%20Attention%20mechanisms.pdf)
+- 卷积和池化的 NumPy 实现；
+- 使用深度学习框架构建 CNN；
+- ResNet 和迁移学习；
+- YOLO 目标检测；
+- U-Net 图像分割；
+- 人脸识别；
+- 神经风格迁移。
 
-## Disclaimer
+为了配合当前以 PyTorch 为主的学习方式，本项目增加了以下 notebook：
 
-I recognize the time people spend on building intuition, understanding new concepts and debugging assignments. The solutions uploaded here are **only for reference**. They are meant to unblock you if you get stuck somewhere. Please do not copy any part of the code as-is (the programming assignments are fairly easy if you read the instructions carefully). Similarly, try out the quizzes yourself before you refer to the quiz solutions. This course is the most straight-forward deep learning course I have ever taken, with fabulous course content and structure. It's a treasure by the deeplearning.ai team.
+- [卷积神经网络应用：PyTorch 版本](<C4 - Convolutional Neural Networks/Week 1/Convolution_model_Application_PyTorch.ipynb>)
+
+该版本保持原 TensorFlow 作业的主题顺序和教学目标，使用 `torch.nn.Sequential`、自定义 `nn.Module`、`DataLoader` 和显式训练循环完成对应任务。
+
+### 第五课：序列模型
+
+目录：[C5 - Sequence Models](<C5 - Sequence Models>)
+
+主要内容：
+
+- RNN 和 LSTM；
+- 字符级语言模型；
+- 音乐生成；
+- Word Embedding；
+- Emojify 文本分类；
+- Attention；
+- 机器翻译；
+- 触发词检测；
+- Transformer、命名实体识别和问答系统。
+
+## 编程作业与版本选择
+
+部分作业存在多个版本。通常建议优先学习文件名中版本号较新的 notebook，例如 `v2a`、`v3a` 或带有较新年份的版本；旧版本可以用于对比 API 和课程内容变化。
+
+以第四课第一周为例，推荐顺序为：
+
+```text
+Convolution_model_Step_by_Step_v2a.ipynb
+        ↓
+理解卷积和池化的底层计算
+        ↓
+Convolution_model_Application_PyTorch.ipynb
+        ↓
+使用 PyTorch 构建和训练完整 CNN
+```
+
+TensorFlow 1.x 风格的 `placeholder`、`Session` 和 `tf.contrib` 等代码可以作为历史参考，不建议作为新项目的主要写法。
+
+## 环境配置
+
+建议使用独立的 Python 虚拟环境：
+
+```bash
+python -m venv .venv
+```
+
+激活虚拟环境后，根据正在学习的作业安装所需依赖。常见依赖包括：
+
+```bash
+pip install numpy matplotlib pandas scipy h5py jupyter pillow
+```
+
+运行 PyTorch 版本作业前，需要根据自己的操作系统和 CUDA 环境安装 PyTorch。安装方式请参考 [PyTorch 官方安装页面](https://pytorch.org/get-started/locally/)。
+
+项目中的 [setup.sh](setup.sh) 用于下载部分预训练 VGG-19 数据，并解压某些作业需要的预训练模型和数据集。运行之前建议先检查脚本内容和下载地址。
+
+## 运行 Notebook
+
+在项目根目录启动 Jupyter：
+
+```bash
+jupyter notebook
+```
+
+也可以使用 JupyterLab、VS Code 或 PyCharm 打开 `.ipynb` 文件。
+
+运行作业时请注意：
+
+- 不同年份的 notebook 可能依赖不同版本的 TensorFlow、Keras 或其他库；
+- PyTorch 默认使用 `NCHW`，即 `batch × channels × height × width`；
+- 部分原始 TensorFlow 作业使用 `NHWC`；
+- 训练大型模型前请确认内存和显存是否足够；
+- 某些 notebook 已保存输出，文件体积可能较大。
+
+## 大文件与 Git LFS
+
+项目包含 HDF5 数据集、模型文件和其他二进制资源。部分文件通过 Git LFS 管理，相关规则位于 [.gitattributes](.gitattributes)。
+
+克隆项目后，如发现 LFS 文件只有几行指针文本，请安装 Git LFS 并执行：
+
+```bash
+git lfs install
+git lfs pull
+```
+
+当前仓库中的单个普通文件均未超过 GitHub 的 100 MiB 限制，因此课程 PDF、图片和 notebook 被完整保留。IDE 配置、虚拟环境、Python 缓存和 Jupyter 临时文件由 [.gitignore](.gitignore) 排除。
+
+## 资料来源与致谢
+
+感谢以下课程和项目提供的教学内容：
+
+- [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)；
+- [DeepLearning.AI](https://www.deeplearning.ai/)；
+- [Andrew Ng](https://www.andrewng.org/)；
+- [amanchadha/coursera-deep-learning-specialization](https://github.com/amanchadha/coursera-deep-learning-specialization)；
+- [Aman Chadha 的课程笔记](https://aman.ai/)。
+
+除特别说明外，课程题目、图示和原始作业代码的版权归原作者及课程提供方所有。本仓库中的个人笔记和 PyTorch 改写内容仅用于学习交流。
+
+## 免责声明
+
+本仓库中的作业答案和测验资料仅供学习、复习与排错参考。建议先独立完成课程作业和测验，在遇到困难时再查看相关实现。
+
+请不要直接复制代码提交到课程平台，也不要将本仓库用于违反 Coursera、DeepLearning.AI 或原作者学术诚信要求的用途。真正重要的是理解代码背后的计算过程、模型设计和调试方法。
