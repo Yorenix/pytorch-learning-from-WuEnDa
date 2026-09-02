@@ -1,0 +1,24 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter runtime files
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
